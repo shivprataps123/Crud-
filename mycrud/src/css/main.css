@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+html {
+    line-height: 1.15;
+  }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "RocknRoll One", sans-serif;
+}
+
+body{
+    background: linear-gradient(190deg,rgba(162, 0, 255, 0.952) 0%,rgba(162, 0, 255, 0.521) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: black;
+    /* overflow: hidden; */
+    /* min-height: 100vh; */
+}
+.App{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+.App h1{
+    display: inline;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: white;
+    text-shadow: 0 0 5px #433aae,3px -1px 5px #271627;
+    margin-top: 3rem;
+}
+
+.addTodos{
+    display: flex;
+    justify-content: center;
+    
+}
+.todo-input{
+    min-width: 15rem;
+    width: 40vw;
+
+    max-height: 2.5rem;
+    background-color: #e1ebfd;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    align-self: center;
+}
+.todo-input:focus{
+    outline: none;
+    border: 2px solid #433aae;
+}
+.add-btn {
+    margin-left: 1rem;
+    background-color: #271627;
+    color: #e1e1e1;
+    border-radius: 50%;
+    border: 2px solid #e1ebfd;
+    font-size: 1.5rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    cursor: pointer;
+    box-shadow: 2px upx 10px #271627;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-btn:focus{
+    outline: none;
+}
+
+.displaytodos{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.displaytodos .buttons{
+    margin-bottom: 2rem;
+}
+.displaytodos .buttons button{
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+}
+.displaytodos .buttons button:focus{
+    outline: none;
+}
+.displaytodos .buttons button:not(:last-child)
+{
+    margin-right: 1rem;
+}
+.displaytodos ul{
+    list-style: none;
+    display: flex;
+    align-self: flex-start;
+    flex-wrap: wrap;
+    margin-left: 5%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    background: #e1e1e1;
+    background: radial-gradient(circle,
+    hsla(270, 49%, 75%, 0.9) 0%,
+    hsla(276, 4%, 28%, 0.9) 100%,
+    );
+    margin: 0 1rem 1rem 0;
+    height: 8rem;
+    width: 18rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    position: relative;
+}
+.card textarea{
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #e1ebfd;
+    color: #7a077a;
+    height: 70%;
+}
+
+.card textarea:disabled{
+    background-color: transparent;
+}
+.card .btns{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+.card .btns button {
+    border-radius: 20%;
+    border: none;
+    margin: 0 0.3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #271627;
+    background-color: transparent;
+}
