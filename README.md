@@ -2,6 +2,7 @@
 <br/>
 <br/>
 
+Deployed link--https://63abf50a3258e443244acc7f--stirring-longma-13a96a.netlify.app/
 
 About--
 This is a Todo app in which all the crud operations are <br/>
